@@ -211,6 +211,8 @@ def _main():
 
         print("\n✅ 공압 동작 테스트 완료.")
 
+        
+
     except Exception as e:
         print(f"⚠️ 그리퍼 제어 오류: {e}")
         try:
