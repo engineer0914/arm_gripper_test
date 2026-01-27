@@ -14,7 +14,7 @@ import serial  # 시리얼 통신 라이브러리 추가
 
 # ====== 설정 변수 ======
 ROBOT_IP_FILE = "IP_robotarm.txt"
-GRIPPER_PORT = "/dev/ttyACM1" # 포트 확인 필요 (ls -l /dev/ttyACM*)
+GRIPPER_PORT = "/dev/ttyACM0" # 포트 확인 필요 (ls -l /dev/ttyACM*)
 GRIPPER_BAUD = 115200
 
 # ====== 로봇 IP 읽기 ======

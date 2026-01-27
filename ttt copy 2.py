@@ -2,6 +2,8 @@
 
 ls -l /dev/ttyACM*
 
+sudo chmod 666 /dev/ttyACM0
+
 # ttyACM* 부분은 현재 연결된 포트에 맞게 수정 (예: ttyACM0)
 udevadm info -a -n /dev/ttyACM0 | grep -E "idVendor|idProduct|serial"
 
@@ -12,7 +14,7 @@ udevadm info -a -n /dev/ttyACM0 | grep -E "idVendor|idProduct|serial"
 import serial
 import time
 
-PORT = "/dev/ttyACM1"
+PORT = "/dev/ttyACM0"
 BAUD = 115200
 
 ser = serial.Serial(PORT, BAUD, timeout=1)
