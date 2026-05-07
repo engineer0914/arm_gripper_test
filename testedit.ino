@@ -1,5 +1,6 @@
 # grip open에 맞춰 동작하는 아두이노 코드
 # OPENCR에 연결하고, 시리얼 동작 확인 가능
+# 출력 글자 없는 버전
 
 
 #include <Arduino.h>
